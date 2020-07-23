@@ -1,0 +1,14 @@
+var device = [];
+device[0] = "keyboard";
+device[1] = "mouse";
+device[2] = "printer";
+device[3] = "monitor";
+document.write("Devices : " + "<br>" + device + "<br>" );
+var a = device.shift();
+document.write("Out" + "<br>" + a + "<br>");
+var b = device.shift();
+document.write("Out" + "<br>" + b + "<br>");
+var c = device.shift();
+document.write("Out" + "<br>" + c + "<br>");
+var d = device.shift();
+document.write("Out" + "<br>" + d + "<br>");

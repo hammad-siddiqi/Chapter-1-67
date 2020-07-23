@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+</head>
+<body>
+    
+     <div class="text-center" id="q1">
+        <h1 style="cursor: pointer;" onclick="display()">Click here</h1>
+
+    </div>
+    <div class="container">
+        <div class="row" style="justify-content: space-between !important; cursor: pointer !important;" >
+            <div id="q2" class="col text-center">
+                <h3>
+                    Mobile Phone lookup
+                </h3>
+                <img onclick="mobile()" src="https://fdn2.gsmarena.com/vv/pics/apple/apple-iphone-x-new-1.jpg" height="200" width="200" alt="iphone">
+                <img onclick="mobile()" src="https://fdn2.gsmarena.com/vv/pics/samsung/samsung-galaxy-s9-ice-blue.jpg" height="200" width="200" alt="samsung">
+                <img onclick="mobile()" src="https://www.91-img.com/pictures/135895-v3-oppo-a5-2020-4gb-ram-mobile-phone-large-1.jpg" height="200" width="200" alt="opppoo">
+                <img onclick="mobile()" src="https://i.gadgets360cdn.com/products/large/1556105245_635_vivoy17_db.jpg" height="200" width="200" alt="vivo">
+            </div>
+
+        </div>
+
+    </div>
+    <div class="text-center m-3">
+        <h1> Counter </h1>
+        <!-- <h1 id="min">0</h1> -->
+        <!-- <h1 id="sec">0</h1> -->
+        <h1 id="milli">0</h1>
+</div>
+<div class="text-center">
+       <button id="myBtn" onclick="start()">Start</button>
+       <button onclick="pause()">Pause</button>
+       <button onclick="reset()">Reset</button>
+       <button id="Btn" onclick="reverse()">Reverse</button>        
+</div> 
+
+
+    
+    <div class="text-center m-3">
+        <img src="https://images.unsplash.com/photo-1541348263662-e068662d82af?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80" height="300" width="300" onmouseover="src='https:images.pexels.com/photos/733745/pexels-photo-733745.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500'" onmouseout="src='https:images.unsplash.com/photo-1541348263662-e068662d82af?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80'">
+
+    </div> 
+
+    <div class="text-center">
+        <h1>
+            Signup Form
+        </h1>
+        <div class="m-2">
+            First Name
+<input id="n1" type="text" onfocus="this.style.backgroundColor = 'grey'" onblur="this.style.backgroundColor = 'white'"> 
+        </div>
+        <div class="m-2">
+            Last Name
+<input id="n2" type="text" onfocus="this.style.backgroundColor = 'grey'" onblur="this.style.backgroundColor = 'white'">
+        </div>
+
+        <div class="m-2">
+            Email Address
+<input id="email" type="text" onfocus="this.style.backgroundColor = 'grey'" onblur="this.style.backgroundColor = 'white'">
+        </div>
+
+        <div class="m-2">
+            Password
+<input id="pass" type="password" onfocus="this.style.backgroundColor = 'grey'" onblur="this.style.backgroundColor = 'white'">
+        </div>
+        
+<div>
+    <button type="submit" onclick="getData()">Submit</button>
+    <button type="reset" onclick="remove()">Reset</button>
+</div>
+<div>
+    <h1>
+        Obtained details
+    </h1>
+    <div>
+        <h4 id="firstName"></h4>
+        <h4 id="lastName"></h4>
+        <h4 id="emai"> </h4>
+        <h4 id="pas"> </h4>
+
+    </div>
+</div>
+        
+    </div>
+
+    
+<div>
+    <p id="para">This item is reliable and usefull for daily household works.<a href="javascript:void(0);" onclick="readMore()">Read More</a></p>
+</div>
+<div>
+    <script>
+        
+function delte(e){
+e.parentNode.remove()
+
+
+}
+function edit(e){
+    var  val = prompt('new value',e.parentNode.firstChild.nodeValue)
+    
+    e.parentNode.firstChild.nodeValue = val;
+    console.log(e.parentNode.firstChild.nodeValue)
+}
+    </script>
+    <ul>
+            <li > <b> index</b>&nbsp;<b>name</b>&nbsp;<b>class</b></li>
+        <li id="ht">01&emsp;sayam&emsp;10&emsp;<button id="del" onclick="delte(this)">delete</button>
+            <button onclick="edit(this)">edit</button>
+            </li>
+   <li id="st">02&emsp;ayesha&emsp;12&emsp;<button onclick="delte(this)">delete</button>
+    <button onclick="edit(this)">edit</button>
+</li>
+<li id="st">03   &emsp;hamad&emsp;10&emsp;<button onclick="delte(this)">delete</button>
+    <button onclick="edit(this)">edit</button>             
+</li>
+ <li id="st">04&emsp;gulnaz&emsp;11&emsp;<button onclick="delte(this)">delete</button>
+    <button onclick="edit(this)">edit</button>
+</li>
+    <li id="st">05&emsp;marke&emsp;12&emsp;<button onclick="delte(this)">delete</button>
+            <button onclick="edit(this)">edit</button>
+    </li>
+    <li id="st">06 &emsp;daert&emsp;12&emsp;<button onclick="delte(this)">delete</button>
+            <button onclick="edit(this)">edit</button>       
+    </li>
+    <li id="st">07 &emsp;faiaz&emsp;10&emsp;<button onclick="delte(this)">delete</button>
+            <button onclick="edit(this)">edit</button>      
+    </li>
+    <li id="st">08 &emsp;danni&emsp;11&emsp;<button onclick="delte(this)">delete</button>
+            <button onclick="edit(this)">edit</button>      
+    </li>
+<li id="st">09&emsp;urooj&emsp;11&emsp;<button onclick="delte(this)">delete</button>
+    <button onclick="edit(this)">edit</button>               
+</li>
+  <li id="st">10&emsp;abbas&emsp;10&emsp;<button onclick="delte(this)">delete</button>
+    <button onclick="edit(this)">edit</button>
+</li>
+    </ul>
+</div>
+<div>
+    <div id="modal" class="modal">
+        <span class="close" id="modal-close" onclick="onClosedImagModal()">&times;</span>
+        <img onclick="image()" class="modal-content" id="modal-img">
+        <img onclick="image()" src="images/1.jpg">
+        <img onclick="image()" src="images/2.jpg">
+        <img onclick="image()" src="images/3.jpg">
+        <img onclick="image()" src="images/4.png">
+        <img onclick="image()" src="images/5.jpg">
+        <img onclick="image()" src="images/6.jpg">
+        <img onclick="image()" src="images/7.png">
+        <img onclick="image()" src="images/8.jpg">
+        <img onclick="image()" src="images/9.jpg">
+        <img onclick="image()" src="images/10.jpg">
+        <img onclick="image()" src="images/11.jpg">
+        <img onclick="image()" src="images/12.jpg">
+        <img onclick="image()" src="images/13.jpg">
+        <img onclick="image()" src="images/14.png">
+        <img onclick="image()" src="images/1.jpg">
+
+    </div>
+</div>
+
+<div>
+    <div> <h1> DOM </h1> <div id=”form-content” class=”content”> <label for=”first-name”>First Name</label> <input type=”text” id=”first-name” /> <label for=”last-name”>Last Name</label> <input type=”text” id=”last-name” /> <label for=”email”>Email</label> <input type=”text” id=”email” /> </div> <div id=”main-content” class=”content”> <p class=”render”> First Name : Alex</p> <p class=”render” id=”lastName”>Last Name: Bank</p> <p class=”render”> Email : alexbank@example.com</p> <p class=”render”> Country : Pakistan </p> <p class=”render”> contact : +92 300 1234567</p> </div> </div>
+</div>
+
+
+
+
+
+
+
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="app 1 chp38-42.js"></script>
+    <script src="app 2 chp38-42.js"></script>
+    <script src="app 3 chp38-42.js"></script>
+    <script src="app 4 chp38-42.js"></script>
+    <script src="app 5 chp38-42.js"></script>
+    <script src="app 6 chp38-42.js"></script>
+    <script src="app 7 chp38-42.js"></script>
+    <script src="app 8 chp38-42.js"></script>
+    <script src="app 9 chp38-42.js"></script>
+    <script src="app 10 chp38-42.js"></script>
+    <script src="app 1 chp43-48.js"></script>
+    <script src="app 1 chp49-52.js"></script>
+    <script src="app 1 chp53-57.js"></script>
+    <script src="app 1 chp58-67.js"></script>
+
+</html>
